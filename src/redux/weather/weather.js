@@ -12,9 +12,7 @@ const initialState = {
 };
 
 // Thunks
-export const asyncThunk = createAsyncThunk(ACTION, async () => {
-  return 'weather';
-});
+export const asyncThunk = createAsyncThunk(ACTION, async () => 'weather');
 
 // Reducer
 const weatherSlice = createSlice({

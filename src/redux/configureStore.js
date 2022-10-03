@@ -1,6 +1,6 @@
 import { configureStore, applyMiddleware } from '@reduxjs/toolkit';
 import thunk from 'redux-thunk';
-import weather from './weather/weather'
+import weather from './weather/weather';
 
 // Redux store
 const store = configureStore(
@@ -10,4 +10,4 @@ const store = configureStore(
   applyMiddleware(thunk),
 );
 
-export default  store;
+export default store;
