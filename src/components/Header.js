@@ -1,11 +1,32 @@
-import React from 'react';
-import { faCloudSunRain, faMagnifyingGlassLocation } from '@fortawesome/free-solid-svg-icons';
+import React, { useState } from 'react';
+import {
+  faCloudSunRain, faMagnifyingGlassLocation, faBars, faClose
+} from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Header = () => {
-  const logoName = 'wedrop'
+  const [menuOpen, setMenu] = useState(false);
+  const logoName = 'wedrop';
+
+  const handleMobileMenu = () => {
+    setMenu((prevState) => !prevState);
+  };
+
   return (
     <header className="py-2 px-4 bg-steel-blue flex item-center justify-between">
+      <div className="w-[20px] flex items-center">
+        <button
+          className="flex item-center"
+          type="button"
+          onClick={handleMobileMenu}
+        >
+          <FontAwesomeIcon
+            id="mobileMenu"
+            className="text-xl text-white"
+            icon={menuOpen ? faClose : faBars}
+          />
+        </button>
+      </div>
       <div className="flex items-center gap-1 text-white">
         <FontAwesomeIcon
           className="text-xl"
