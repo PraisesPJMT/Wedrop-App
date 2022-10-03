@@ -7,7 +7,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Header = () => {
   const [menuOpen, setMenu] = useState(false);
-  const logoName = 'wedrop';
   const navs = [
     { name: 'Home', id: 1, path: '/' },
     { name: 'Contact', id: 2, path: '/contact' },
@@ -15,6 +14,10 @@ const Header = () => {
 
   const handleMobileMenu = () => {
     setMenu((prevState) => !prevState);
+  };
+
+  const closeMobileMenu = () => {
+    setMenu(() => false);
   };
 
   return (
@@ -32,12 +35,12 @@ const Header = () => {
           />
         </button>
       </div>
-      <Link className="flex items-center gap-1 text-white hover:scale-110" to="/">
+      <Link className="flex items-center gap-1 text-white hover:scale-110" to="/" onClick={closeMobileMenu}>
         <FontAwesomeIcon
           className="text-xl md:text-2xl"
           icon={faCloudSunRain}
         />
-        <span className="capitalize text-xm md:text-xl font-bold">{ logoName }</span>
+        <span className="capitalize text-xm md:text-xl font-bold">wedrop</span>
       </Link>
       <nav className={`pb-6 flex flex-col gap-6 bg-steel-blue z-[-1] absolute left-0 w-full h-screen transition-all duration-500 ease-in-out md:order-last md:flex-row md:items-center md:pb-0 md:static md:z-auto md:w-auto md:h-auto md:pt-0 md:pl-9 ${menuOpen ? 'top-0 pt-16' : 'top-[-890px] pt-auto'}`}>
         { navs.map((nav) => (
@@ -45,6 +48,7 @@ const Header = () => {
             className="text-white font-bold text-xl px-6 w-full md:w-auto md:px-1.5 md:mx-1 active:border-b-2 active:border-b-white md:hover:scale-110"
             key={nav.path}
             to={nav.path}
+            onClick={closeMobileMenu}
           >
             {nav.name}
           </NavLink>
@@ -62,6 +66,7 @@ const Header = () => {
           className="btn inline-block bg-steel-blue w-1/5 md:w-auto text-white font-medium text-xs leading-tight uppercase rounded-r shadow-md border-white border-2 hover:shadow-lg focus:bg-steel-blue  focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg active:text-steel-blue active:text-bold transition duration-150 ease-in-out flex items-center justify-center md:px-2 md:py-0.5"
           type="button"
           id="button-addon2"
+          onClick={closeMobileMenu}
         >
           <FontAwesomeIcon
             className="text-xs hover:scale-125 px-1.5 py-1.5 md:text-xl md:p-auto"
