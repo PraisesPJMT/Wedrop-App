@@ -16,6 +16,8 @@ Coming soon...
 - ![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
 - ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-%2318B8D6.svg?style=for-the-badge&logo=TailwindCSS&logoColor=white) ![StyleLint](https://img.shields.io/badge/StyleLint-%2318B8D6.svg?style=for-the-badge)
 - ![JavaScript](https://img.shields.io/badge/JavaScript-%23F0DB4F.svg?style=for-the-badge&logo=JavaScript&logoColor=white) ![ESlint](https://img.shields.io/badge/ESlint-%23F0DB4F.svg?style=for-the-badge)
+- ![HTML5](https://img.shields.io/badge/HTML5-%23D93A2C.svg?style=for-the-badge&logo=HTML5&logoColor=white) ![LightHouse](https://img.shields.io/badge/LightHouse-%23D93A2C.svg?style=for-the-badge)
+- ![CSS3](https://img.shields.io/badge/CSS3-%23006BB4.svg?style=for-the-badge&logo=CSS3&logoColor=white) ![StyleLint](https://img.shields.io/badge/StyleLint-%23006BB4.svg?style=for-the-badge)
 
 ## Prerequisites
 The following applications are required to be installed for the project to run!
