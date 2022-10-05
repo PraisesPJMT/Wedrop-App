@@ -17,7 +17,7 @@ const Continent = () => {
       <section className="text-white relative h-[200px] p-3">
         <img
           className="opacity-20 h-full"
-          src={`./assets/maps/${continentData.continent.toLowerCase().replace(/ /g, '-')}.png`}
+          src={`https://raw.githubusercontent.com/PraisesPJMT/Data/main/maps/${continentData.continent.toLowerCase().replace(/ /g, '-')}.png`}
           alt="World Map"
         />
         <div className="absolute top-[20%] right-6 text-right w-2/4">

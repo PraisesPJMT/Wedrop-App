@@ -27,6 +27,7 @@ const CountryList = ({ countries }) => (
             key={country.countryName}
             cityCount={country.cityCount}
             countryName={country.countryName}
+            continent={country.continent}
           />
         ))}
       </div>
@@ -52,6 +53,7 @@ const CountryList = ({ countries }) => (
             key={country.countryName}
             cityCount={country.cityCount}
             countryName={country.countryName}
+            continent={country.continent}
           />
         ))}
       </div>
@@ -77,6 +79,7 @@ const CountryList = ({ countries }) => (
             key={country.countryName}
             cityCount={country.cityCount}
             countryName={country.countryName}
+            continent={country.continent}
           />
         ))}
       </div>
@@ -102,6 +105,7 @@ const CountryList = ({ countries }) => (
             key={country.countryName}
             cityCount={country.cityCount}
             countryName={country.countryName}
+            continent={country.continent}
           />
         ))}
       </div>
@@ -127,6 +131,7 @@ const CountryList = ({ countries }) => (
             key={country.countryName}
             cityCount={country.cityCount}
             countryName={country.countryName}
+            continent={country.continent}
           />
         ))}
       </div>
@@ -135,9 +140,11 @@ const CountryList = ({ countries }) => (
 );
 
 CountryList.propTypes = {
-  countries: PropTypes.arrayOf(PropTypes.objectOf({
+  countries: PropTypes.arrayOf(PropTypes.shape({
     countryId: PropTypes.string,
-    CountryName: PropTypes.string,
+    countryName: PropTypes.string,
+    continent: PropTypes.string,
+    cityCount: PropTypes.number,
   })).isRequired,
 };
 
