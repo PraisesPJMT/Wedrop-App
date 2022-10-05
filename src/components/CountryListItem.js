@@ -4,15 +4,15 @@ import { faMagnifyingGlassLocation } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
-const Country = ({ countryName, cityCount }) => (
+const Country = ({ countryName, cityCount, continent }) => (
   <Link
     key={countryName}
-    to={`/${countryName.toLowerCase().replace(/ /g, '-')}`}
+    to={`/${continent.toLowerCase().replace(/ /g, '-')}/${countryName.toLowerCase().replace(/ /g, '-')}`}
     className="flex p-6 flex-col items-center justify-center relative border-2 border-steel-blue"
   >
     <img
       className="opacity-50 h-full hover:scale-110 transition duration-500 ease-in-out"
-      src={`./assets/maps/${countryName.toLowerCase().replace(/ /g, '-')}.png`}
+      src={`https://raw.githubusercontent.com/PraisesPJMT/Data/main/maps/${countryName.toLowerCase().replace(/ /g, '-').replace(/'/g, '')}.png`}
       alt={countryName}
     />
     <FontAwesomeIcon
@@ -32,6 +32,7 @@ const Country = ({ countryName, cityCount }) => (
 Country.propTypes = {
   countryName: PropTypes.string.isRequired,
   cityCount: PropTypes.number.isRequired,
+  continent: PropTypes.string.isRequired,
 };
 
 export default Country;
