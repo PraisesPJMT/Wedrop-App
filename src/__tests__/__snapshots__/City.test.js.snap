@@ -6,7 +6,7 @@ Object {
   "baseElement": <body>
     <div>
       <section
-        class="text-white relative p-3 text-center"
+        class="text-white relative p-3 text-center md:max-w-xl md:mx-auto"
       >
         <h2
           class="text-4xl font-bold"
@@ -120,13 +120,13 @@ Object {
         class="text-white bg-strip-blue p-1"
       >
         <p
-          class="text-xs font-bold"
+          class="text-xs font-bold md:text-center"
         >
           MORE WEATHER INFORMATION
         </p>
       </div>
       <section
-        class="text-white grid grid-cols-2 overflow-y-auto"
+        class="text-white grid grid-cols-2 overflow-y-auto md:max-w-xl md:mx-auto"
       >
         <div
           class="py-5 px-3 flex flex-col justify-center"
@@ -343,7 +343,7 @@ Object {
   </body>,
   "container": <div>
     <section
-      class="text-white relative p-3 text-center"
+      class="text-white relative p-3 text-center md:max-w-xl md:mx-auto"
     >
       <h2
         class="text-4xl font-bold"
@@ -457,13 +457,13 @@ Object {
       class="text-white bg-strip-blue p-1"
     >
       <p
-        class="text-xs font-bold"
+        class="text-xs font-bold md:text-center"
       >
         MORE WEATHER INFORMATION
       </p>
     </div>
     <section
-      class="text-white grid grid-cols-2 overflow-y-auto"
+      class="text-white grid grid-cols-2 overflow-y-auto md:max-w-xl md:mx-auto"
     >
       <div
         class="py-5 px-3 flex flex-col justify-center"

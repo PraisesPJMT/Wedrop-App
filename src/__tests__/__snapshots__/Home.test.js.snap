@@ -10,11 +10,11 @@ Object {
       >
         <img
           alt="World Map"
-          class="w-full opacity-20"
+          class="w-full md:w-auto opacity-20"
           src="https://raw.githubusercontent.com/PraisesPJMT/Data/main/maps/world-map.png"
         />
         <div
-          class="absolute top-[20%] right-6 text-right w-3/4"
+          class="absolute top-[20%] right-6 md:right-[20%] text-right w-3/4"
         >
           <h1
             class="font-black text-2xl"
@@ -44,10 +44,10 @@ Object {
         </p>
       </div>
       <section
-        class="text-white grid grid-cols-2 overflow-y-auto "
+        class="text-white grid grid-cols-2 overflow-y-auto md:grid-cols-6 md:overflow-hidden"
       >
         <a
-          class="h-[180px] relative "
+          class="h-[180px] relative md:bg-cornflower-blue md:border md:border-dark-blue "
           href="/africa"
         >
           <img
@@ -72,7 +72,7 @@ Object {
           </p>
         </a>
         <a
-          class="h-[180px] relative bg-dark-blue"
+          class="h-[180px] relative md:bg-cornflower-blue md:border md:border-dark-blue bg-dark-blue"
           href="/asia"
         >
           <img
@@ -97,7 +97,7 @@ Object {
           </p>
         </a>
         <a
-          class="h-[180px] relative bg-dark-blue"
+          class="h-[180px] relative md:bg-cornflower-blue md:border md:border-dark-blue bg-dark-blue"
           href="/europe"
         >
           <img
@@ -122,7 +122,7 @@ Object {
           </p>
         </a>
         <a
-          class="h-[180px] relative "
+          class="h-[180px] relative md:bg-cornflower-blue md:border md:border-dark-blue "
           href="/oceania"
         >
           <img
@@ -147,7 +147,7 @@ Object {
           </p>
         </a>
         <a
-          class="h-[180px] relative "
+          class="h-[180px] relative md:bg-cornflower-blue md:border md:border-dark-blue "
           href="/south-america"
         >
           <img
@@ -172,7 +172,7 @@ Object {
           </p>
         </a>
         <a
-          class="h-[180px] relative bg-dark-blue"
+          class="h-[180px] relative md:bg-cornflower-blue md:border md:border-dark-blue bg-dark-blue"
           href="/north-america"
         >
           <img
@@ -205,11 +205,11 @@ Object {
     >
       <img
         alt="World Map"
-        class="w-full opacity-20"
+        class="w-full md:w-auto opacity-20"
         src="https://raw.githubusercontent.com/PraisesPJMT/Data/main/maps/world-map.png"
       />
       <div
-        class="absolute top-[20%] right-6 text-right w-3/4"
+        class="absolute top-[20%] right-6 md:right-[20%] text-right w-3/4"
       >
         <h1
           class="font-black text-2xl"
@@ -239,10 +239,10 @@ Object {
       </p>
     </div>
     <section
-      class="text-white grid grid-cols-2 overflow-y-auto "
+      class="text-white grid grid-cols-2 overflow-y-auto md:grid-cols-6 md:overflow-hidden"
     >
       <a
-        class="h-[180px] relative "
+        class="h-[180px] relative md:bg-cornflower-blue md:border md:border-dark-blue "
         href="/africa"
       >
         <img
@@ -267,7 +267,7 @@ Object {
         </p>
       </a>
       <a
-        class="h-[180px] relative bg-dark-blue"
+        class="h-[180px] relative md:bg-cornflower-blue md:border md:border-dark-blue bg-dark-blue"
         href="/asia"
       >
         <img
@@ -292,7 +292,7 @@ Object {
         </p>
       </a>
       <a
-        class="h-[180px] relative bg-dark-blue"
+        class="h-[180px] relative md:bg-cornflower-blue md:border md:border-dark-blue bg-dark-blue"
         href="/europe"
       >
         <img
@@ -317,7 +317,7 @@ Object {
         </p>
       </a>
       <a
-        class="h-[180px] relative "
+        class="h-[180px] relative md:bg-cornflower-blue md:border md:border-dark-blue "
         href="/oceania"
       >
         <img
@@ -342,7 +342,7 @@ Object {
         </p>
       </a>
       <a
-        class="h-[180px] relative "
+        class="h-[180px] relative md:bg-cornflower-blue md:border md:border-dark-blue "
         href="/south-america"
       >
         <img
@@ -367,7 +367,7 @@ Object {
         </p>
       </a>
       <a
-        class="h-[180px] relative bg-dark-blue"
+        class="h-[180px] relative md:bg-cornflower-blue md:border md:border-dark-blue bg-dark-blue"
         href="/north-america"
       >
         <img

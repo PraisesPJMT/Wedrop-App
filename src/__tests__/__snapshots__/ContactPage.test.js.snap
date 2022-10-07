@@ -82,7 +82,7 @@ Object {
             class="social-card flex flex-wrap justify-center py-4 gap-2 "
           >
             <a
-              class="px-2 py-1 flex gap-1 items-center text-[1rem] font-bold bg-black"
+              class="px-2 py-1 flex gap-1 items-center text-[1rem] font-bold bg-black hover:scale-110"
               href="https://github.com/PraisesPJMT"
               rel="noreferrer"
               target="_blank"
@@ -107,7 +107,7 @@ Object {
               </span>
             </a>
             <a
-              class="px-2 py-1 flex gap-1 items-center text-[1rem] font-bold bg-[#de5246]"
+              class="px-2 py-1 flex gap-1 items-center text-[1rem] font-bold bg-[#de5246] hover:scale-110"
               href="mailto:praisesmusa@gmail.com"
               rel="noreferrer"
               target="_blank"
@@ -132,7 +132,7 @@ Object {
               </span>
             </a>
             <a
-              class="px-2 py-1 flex gap-1 items-center text-[1rem] font-bold bg-[#0e76a8]"
+              class="px-2 py-1 flex gap-1 items-center text-[1rem] font-bold bg-[#0e76a8] hover:scale-110"
               href="https://www.linkedin.com/in/praises-tula-9233aa76"
               rel="noreferrer"
               target="_blank"
@@ -157,7 +157,7 @@ Object {
               </span>
             </a>
             <a
-              class="px-2 py-1 flex gap-1 items-center text-[1rem] font-bold bg-[#1da1f2]"
+              class="px-2 py-1 flex gap-1 items-center text-[1rem] font-bold bg-[#1da1f2] hover:scale-110"
               href="https://twitter.com/PraisesPJMT"
               rel="noreferrer"
               target="_blank"
@@ -182,7 +182,7 @@ Object {
               </span>
             </a>
             <a
-              class="px-2 py-1 flex gap-1 items-center text-[1rem] font-bold bg-[#3b5998]"
+              class="px-2 py-1 flex gap-1 items-center text-[1rem] font-bold bg-[#3b5998] hover:scale-110"
               href="https://web.facebook.com/praises.musa"
               rel="noreferrer"
               target="_blank"
@@ -207,7 +207,7 @@ Object {
               </span>
             </a>
             <a
-              class="px-2 py-1 flex gap-1 items-center text-[1rem] font-bold bg-[#833ab4]"
+              class="px-2 py-1 flex gap-1 items-center text-[1rem] font-bold bg-[#833ab4] hover:scale-110"
               href="https://www.instagram.com/praisespjmt/"
               rel="noreferrer"
               target="_blank"
@@ -314,7 +314,7 @@ Object {
           class="social-card flex flex-wrap justify-center py-4 gap-2 "
         >
           <a
-            class="px-2 py-1 flex gap-1 items-center text-[1rem] font-bold bg-black"
+            class="px-2 py-1 flex gap-1 items-center text-[1rem] font-bold bg-black hover:scale-110"
             href="https://github.com/PraisesPJMT"
             rel="noreferrer"
             target="_blank"
@@ -339,7 +339,7 @@ Object {
             </span>
           </a>
           <a
-            class="px-2 py-1 flex gap-1 items-center text-[1rem] font-bold bg-[#de5246]"
+            class="px-2 py-1 flex gap-1 items-center text-[1rem] font-bold bg-[#de5246] hover:scale-110"
             href="mailto:praisesmusa@gmail.com"
             rel="noreferrer"
             target="_blank"
@@ -364,7 +364,7 @@ Object {
             </span>
           </a>
           <a
-            class="px-2 py-1 flex gap-1 items-center text-[1rem] font-bold bg-[#0e76a8]"
+            class="px-2 py-1 flex gap-1 items-center text-[1rem] font-bold bg-[#0e76a8] hover:scale-110"
             href="https://www.linkedin.com/in/praises-tula-9233aa76"
             rel="noreferrer"
             target="_blank"
@@ -389,7 +389,7 @@ Object {
             </span>
           </a>
           <a
-            class="px-2 py-1 flex gap-1 items-center text-[1rem] font-bold bg-[#1da1f2]"
+            class="px-2 py-1 flex gap-1 items-center text-[1rem] font-bold bg-[#1da1f2] hover:scale-110"
             href="https://twitter.com/PraisesPJMT"
             rel="noreferrer"
             target="_blank"
@@ -414,7 +414,7 @@ Object {
             </span>
           </a>
           <a
-            class="px-2 py-1 flex gap-1 items-center text-[1rem] font-bold bg-[#3b5998]"
+            class="px-2 py-1 flex gap-1 items-center text-[1rem] font-bold bg-[#3b5998] hover:scale-110"
             href="https://web.facebook.com/praises.musa"
             rel="noreferrer"
             target="_blank"
@@ -439,7 +439,7 @@ Object {
             </span>
           </a>
           <a
-            class="px-2 py-1 flex gap-1 items-center text-[1rem] font-bold bg-[#833ab4]"
+            class="px-2 py-1 flex gap-1 items-center text-[1rem] font-bold bg-[#833ab4] hover:scale-110"
             href="https://www.instagram.com/praisespjmt/"
             rel="noreferrer"
             target="_blank"
