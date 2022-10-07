@@ -7,7 +7,7 @@
 > - Navigate through major cities in the world
 
 ## Preview
-Coming soon...
+![Wedrop App Preview](./src/assets/wedrop-preview.gif)
 
 ## Built With [Linter]
 
@@ -33,7 +33,7 @@ The following applications are required to be installed for the project to run!
     - If the app is not opened immediately, then open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 ## App Deployment
-App deployment is coming soon...
+[Wedrop](https://wedrop-app.netlify.app/)
 
 ![Netlify](https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7)
 
@@ -56,7 +56,7 @@ Contributions, [issues](https://github.com/PraisesPJMT/Wedrop-App/issues), and f
 Give a ⭐️ if you like this project!
 
 ## Acknowledgments
-
+- Original design idea by  [Nelson Sakwa](https://www.behance.net/sakwadesignstudio) on Behance.
 - Hat tip to you for checking out this amazing project.
 
 ## 📝 License
