@@ -1,11 +1,11 @@
 import { configureStore, applyMiddleware } from '@reduxjs/toolkit';
 import thunk from 'redux-thunk';
-import weather from './weather/weather';
+import weatherReducer from './weather/weather';
 
 // Redux store
 const store = configureStore(
   {
-    reducer: weather,
+    reducer: weatherReducer,
   },
   applyMiddleware(thunk),
 );

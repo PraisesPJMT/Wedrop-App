@@ -4,6 +4,7 @@ import Header from './components/Header';
 import HomePage from './pages/HomePage';
 import Continent from './components/Continent';
 import Country from './components/Country';
+import CityPage from './pages/CityPage';
 
 const App = () => (
   <>
@@ -14,6 +15,7 @@ const App = () => (
           <Route path="/" element={<HomePage />} />
           <Route path="/:continent" element={<Continent />} />
           <Route path="/:continent/:country" element={<Country />} />
+          <Route path="/:continent/:country/:city" element={<CityPage />} />
         </Routes>
       </main>
     </Router>

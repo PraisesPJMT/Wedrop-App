@@ -2,24 +2,15 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import { faMapPin } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import cities from '../redux/api/countryLog.json';
 import City from './CityListItem';
 import CityList from './CityList';
+import api from '../redux/api/api';
 
 const Country = () => {
   const { continent, country } = useParams();
   const continentName = continent.replace(/-/g, ' ');
   const countryName = country.replace(/-/g, ' ');
-  let countryData;
-  cities.forEach((cont) => {
-    if (cont.continent.toLowerCase() === continentName) {
-      cont.countries.forEach((country) => {
-        if (country.countryName.toLowerCase() === countryName) {
-          countryData = country;
-        }
-      });
-    }
-  });
+  const countryData = api.getCountryData(continentName, countryName);
   return (
     <>
       <section className="text-white relative flex justify-end h-[200px] p-3">

@@ -1,18 +1,26 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
+import api from '../api/api';
 
 // Actions
-const ACTION = 'wedrop/weather/ACTIONS';
+const GET_WEATHER = 'wedrop/weather/GET_WEATHER';
 
 // Initial State
 const initialState = {
-  weather: [],
+  weatherData: {},
+  cities: api.getCities(),
   status: 'idle', // 'idle' | 'loading' | 'succeeded' | 'failed'
   error: null,
   message: 'weather',
 };
 
 // Thunks
-export const asyncThunk = createAsyncThunk(ACTION, async () => 'weather');
+export const getWeather = createAsyncThunk(GET_WEATHER, async (cityName) => {
+  try {
+    return await api.fetchWeather(cityName);
+  } catch (error) {
+    return error.message;
+  }
+});
 
 // Reducer
 const weatherSlice = createSlice({
@@ -21,16 +29,16 @@ const weatherSlice = createSlice({
   reducers: {},
   extraReducers: (builder) => {
     builder
-      .addCase(asyncThunk.pending, (state) => ({
+      .addCase(getWeather.pending, (state) => ({
         ...state,
         status: 'loading',
       }))
-      .addCase(asyncThunk.fulfilled, (state, action) => ({
+      .addCase(getWeather.fulfilled, (state, action) => ({
         ...state,
-        weather: action.payload,
+        weatherData: action.payload,
         status: 'succeeded',
       }))
-      .addCase(asyncThunk.rejected, (state, action) => ({
+      .addCase(getWeather.rejected, (state, action) => ({
         ...state,
         status: 'failed',
         error: action.payload,
@@ -38,8 +46,9 @@ const weatherSlice = createSlice({
   },
 });
 
-export const allWeather = (state) => state.weather.weather;
-export const allStatus = (state) => state.weather.status;
-export const allMessages = (state) => state.weather.message;
+export const allWeather = (state) => state.weatherData;
+export const allCities = (state) => state.cities;
+export const allStatus = (state) => state.status;
+export const allMessages = (state) => state.message;
 
 export default weatherSlice.reducer;

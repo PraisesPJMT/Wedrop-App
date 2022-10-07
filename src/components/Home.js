@@ -1,24 +1,22 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import cities from '../redux/api/countryLog.json';
+import { useSelector } from 'react-redux';
+import { allCities } from '../redux/weather/weather';
+import api from '../redux/api/api';
 
 const Home = () => {
-  const cityCount = () => {
-    let sum = 0;
-    cities.forEach((country) => { sum += country.cityCount; });
-    return sum;
-  };
+  const cities = useSelector(allCities);
   return (
     <>
       <section className="text-white relative">
         <img className="w-full opacity-20" src="https://raw.githubusercontent.com/PraisesPJMT/Data/main/maps/world-map.png" alt="World Map" />
-        <div className="absolute top-[20%] right-6 text-right w-2/4">
+        <div className="absolute top-[20%] right-6 text-right w-3/4">
           <h1 className="font-black text-2xl">Wadrop</h1>
           <h2 className="font-bold text-xm">
             Check Weather in Cities All Over the World
           </h2>
           <p className="font-xl">
-            {cityCount().toLocaleString()}
+            {api.getCitiesCount().toLocaleString()}
             + Cities
           </p>
         </div>

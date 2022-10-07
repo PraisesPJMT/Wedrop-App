@@ -1,17 +1,12 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import cities from '../redux/api/countryLog.json';
+import api from '../redux/api/api';
 import CountryList from './CountryList';
 
 const Continent = () => {
   const { continent } = useParams();
   const continentName = continent.replace(/-/g, ' ');
-  let continentData;
-  cities.forEach((cont) => {
-    if (cont.continent.toLowerCase() === continentName) {
-      continentData = cont;
-    }
-  });
+  const continentData = api.getContinentData(continentName);
   return (
     <>
       <section className="text-white relative h-[200px] p-3">
