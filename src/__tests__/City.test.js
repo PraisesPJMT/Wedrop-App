@@ -49,7 +49,10 @@ describe('City page test', () => {
     render(
       <City weather={mockedWeather} />,
     );
-    const { ContinentName, CountryName } = Function.getContinentCountryName(mockedWeather.countryCode);
+    const {
+      ContinentName,
+      CountryName,
+    } = Function.getContinentCountryName(mockedWeather.countryCode);
     expect(
       document.querySelector('.continent').textContent,
     ).toBe(ContinentName);
