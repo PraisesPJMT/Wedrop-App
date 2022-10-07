@@ -1,0 +1,448 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home page component tests Renders home page component correctly 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <section
+        class="text-white relative"
+      >
+        <img
+          alt="World Map"
+          class="w-full opacity-20"
+          src="https://raw.githubusercontent.com/PraisesPJMT/Data/main/maps/world-map.png"
+        />
+        <div
+          class="absolute top-[20%] right-6 text-right w-3/4"
+        >
+          <h1
+            class="font-black text-2xl"
+          >
+            Wadrop
+          </h1>
+          <h2
+            class="font-bold text-xm"
+          >
+            Check Weather in Cities All Over the World
+          </h2>
+          <p
+            class="font-xl"
+          >
+            22,418
+            + Cities
+          </p>
+        </div>
+      </section>
+      <div
+        class="text-white bg-strip-blue p-1"
+      >
+        <p
+          class="text-xs font-bold"
+        >
+          COUNTRIES BY CONTINENTS
+        </p>
+      </div>
+      <section
+        class="text-white grid grid-cols-2 overflow-y-auto "
+      >
+        <a
+          class="h-[180px] relative "
+          href="/africa"
+        >
+          <img
+            alt="Africa"
+            class="w-4/5 p-3 opacity-50 hover:scale-110"
+            src="https://raw.githubusercontent.com/PraisesPJMT/Data/main/maps/africa.png"
+          />
+          <p
+            class="flex flex-col absolute bottom-3 right-3 text-right"
+          >
+            <span
+              class="font-bold"
+            >
+              Africa
+            </span>
+            <span
+              class=""
+            >
+              2,106
+              + cities
+            </span>
+          </p>
+        </a>
+        <a
+          class="h-[180px] relative bg-dark-blue"
+          href="/asia"
+        >
+          <img
+            alt="Asia"
+            class="w-4/5 p-3 opacity-50 hover:scale-110"
+            src="https://raw.githubusercontent.com/PraisesPJMT/Data/main/maps/asia.png"
+          />
+          <p
+            class="flex flex-col absolute bottom-3 right-3 text-right"
+          >
+            <span
+              class="font-bold"
+            >
+              Asia
+            </span>
+            <span
+              class=""
+            >
+              7,296
+              + cities
+            </span>
+          </p>
+        </a>
+        <a
+          class="h-[180px] relative bg-dark-blue"
+          href="/europe"
+        >
+          <img
+            alt="Europe"
+            class="w-4/5 p-3 opacity-50 hover:scale-110"
+            src="https://raw.githubusercontent.com/PraisesPJMT/Data/main/maps/europe.png"
+          />
+          <p
+            class="flex flex-col absolute bottom-3 right-3 text-right"
+          >
+            <span
+              class="font-bold"
+            >
+              Europe
+            </span>
+            <span
+              class=""
+            >
+              6,690
+              + cities
+            </span>
+          </p>
+        </a>
+        <a
+          class="h-[180px] relative "
+          href="/oceania"
+        >
+          <img
+            alt="Oceania"
+            class="w-4/5 p-3 opacity-50 hover:scale-110"
+            src="https://raw.githubusercontent.com/PraisesPJMT/Data/main/maps/oceania.png"
+          />
+          <p
+            class="flex flex-col absolute bottom-3 right-3 text-right"
+          >
+            <span
+              class="font-bold"
+            >
+              Oceania
+            </span>
+            <span
+              class=""
+            >
+              183
+              + cities
+            </span>
+          </p>
+        </a>
+        <a
+          class="h-[180px] relative "
+          href="/south-america"
+        >
+          <img
+            alt="South America"
+            class="w-4/5 p-3 opacity-50 hover:scale-110"
+            src="https://raw.githubusercontent.com/PraisesPJMT/Data/main/maps/south-america.png"
+          />
+          <p
+            class="flex flex-col absolute bottom-3 right-3 text-right"
+          >
+            <span
+              class="font-bold"
+            >
+              South America
+            </span>
+            <span
+              class=""
+            >
+              2,057
+              + cities
+            </span>
+          </p>
+        </a>
+        <a
+          class="h-[180px] relative bg-dark-blue"
+          href="/north-america"
+        >
+          <img
+            alt="North America"
+            class="w-4/5 p-3 opacity-50 hover:scale-110"
+            src="https://raw.githubusercontent.com/PraisesPJMT/Data/main/maps/north-america.png"
+          />
+          <p
+            class="flex flex-col absolute bottom-3 right-3 text-right"
+          >
+            <span
+              class="font-bold"
+            >
+              North America
+            </span>
+            <span
+              class=""
+            >
+              4,086
+              + cities
+            </span>
+          </p>
+        </a>
+      </section>
+    </div>
+  </body>,
+  "container": <div>
+    <section
+      class="text-white relative"
+    >
+      <img
+        alt="World Map"
+        class="w-full opacity-20"
+        src="https://raw.githubusercontent.com/PraisesPJMT/Data/main/maps/world-map.png"
+      />
+      <div
+        class="absolute top-[20%] right-6 text-right w-3/4"
+      >
+        <h1
+          class="font-black text-2xl"
+        >
+          Wadrop
+        </h1>
+        <h2
+          class="font-bold text-xm"
+        >
+          Check Weather in Cities All Over the World
+        </h2>
+        <p
+          class="font-xl"
+        >
+          22,418
+          + Cities
+        </p>
+      </div>
+    </section>
+    <div
+      class="text-white bg-strip-blue p-1"
+    >
+      <p
+        class="text-xs font-bold"
+      >
+        COUNTRIES BY CONTINENTS
+      </p>
+    </div>
+    <section
+      class="text-white grid grid-cols-2 overflow-y-auto "
+    >
+      <a
+        class="h-[180px] relative "
+        href="/africa"
+      >
+        <img
+          alt="Africa"
+          class="w-4/5 p-3 opacity-50 hover:scale-110"
+          src="https://raw.githubusercontent.com/PraisesPJMT/Data/main/maps/africa.png"
+        />
+        <p
+          class="flex flex-col absolute bottom-3 right-3 text-right"
+        >
+          <span
+            class="font-bold"
+          >
+            Africa
+          </span>
+          <span
+            class=""
+          >
+            2,106
+            + cities
+          </span>
+        </p>
+      </a>
+      <a
+        class="h-[180px] relative bg-dark-blue"
+        href="/asia"
+      >
+        <img
+          alt="Asia"
+          class="w-4/5 p-3 opacity-50 hover:scale-110"
+          src="https://raw.githubusercontent.com/PraisesPJMT/Data/main/maps/asia.png"
+        />
+        <p
+          class="flex flex-col absolute bottom-3 right-3 text-right"
+        >
+          <span
+            class="font-bold"
+          >
+            Asia
+          </span>
+          <span
+            class=""
+          >
+            7,296
+            + cities
+          </span>
+        </p>
+      </a>
+      <a
+        class="h-[180px] relative bg-dark-blue"
+        href="/europe"
+      >
+        <img
+          alt="Europe"
+          class="w-4/5 p-3 opacity-50 hover:scale-110"
+          src="https://raw.githubusercontent.com/PraisesPJMT/Data/main/maps/europe.png"
+        />
+        <p
+          class="flex flex-col absolute bottom-3 right-3 text-right"
+        >
+          <span
+            class="font-bold"
+          >
+            Europe
+          </span>
+          <span
+            class=""
+          >
+            6,690
+            + cities
+          </span>
+        </p>
+      </a>
+      <a
+        class="h-[180px] relative "
+        href="/oceania"
+      >
+        <img
+          alt="Oceania"
+          class="w-4/5 p-3 opacity-50 hover:scale-110"
+          src="https://raw.githubusercontent.com/PraisesPJMT/Data/main/maps/oceania.png"
+        />
+        <p
+          class="flex flex-col absolute bottom-3 right-3 text-right"
+        >
+          <span
+            class="font-bold"
+          >
+            Oceania
+          </span>
+          <span
+            class=""
+          >
+            183
+            + cities
+          </span>
+        </p>
+      </a>
+      <a
+        class="h-[180px] relative "
+        href="/south-america"
+      >
+        <img
+          alt="South America"
+          class="w-4/5 p-3 opacity-50 hover:scale-110"
+          src="https://raw.githubusercontent.com/PraisesPJMT/Data/main/maps/south-america.png"
+        />
+        <p
+          class="flex flex-col absolute bottom-3 right-3 text-right"
+        >
+          <span
+            class="font-bold"
+          >
+            South America
+          </span>
+          <span
+            class=""
+          >
+            2,057
+            + cities
+          </span>
+        </p>
+      </a>
+      <a
+        class="h-[180px] relative bg-dark-blue"
+        href="/north-america"
+      >
+        <img
+          alt="North America"
+          class="w-4/5 p-3 opacity-50 hover:scale-110"
+          src="https://raw.githubusercontent.com/PraisesPJMT/Data/main/maps/north-america.png"
+        />
+        <p
+          class="flex flex-col absolute bottom-3 right-3 text-right"
+        >
+          <span
+            class="font-bold"
+          >
+            North America
+          </span>
+          <span
+            class=""
+          >
+            4,086
+            + cities
+          </span>
+        </p>
+      </a>
+    </section>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
