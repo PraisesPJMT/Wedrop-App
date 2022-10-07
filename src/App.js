@@ -5,6 +5,8 @@ import HomePage from './pages/HomePage';
 import Continent from './components/Continent';
 import Country from './components/Country';
 import CityPage from './pages/CityPage';
+import ContactPage from './pages/ContactPage';
+import FailedPage from './pages/FailedPage';
 
 const App = () => (
   <>
@@ -16,6 +18,8 @@ const App = () => (
           <Route path="/:continent" element={<Continent />} />
           <Route path="/:continent/:country" element={<Country />} />
           <Route path="/:continent/:country/:city" element={<CityPage />} />
+          <Route path="/contact" element={<ContactPage />} />
+          <Route path="/invalid" element={<FailedPage />} />
         </Routes>
       </main>
     </Router>
