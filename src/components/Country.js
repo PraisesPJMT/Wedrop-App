@@ -39,7 +39,7 @@ const Country = () => {
       <div className="text-white bg-strip-blue p-1">
         <p className="text-xs font-bold">CITIES BY ALPHABETS</p>
       </div>
-      <section className={`text-white ${(countryData.cityCount < 50) ? 'grid grid-cols-4' : ''}`}>
+      <section className={`text-white ${(countryData.cityCount < 50) ? 'grid grid-cols-4 md:grid-cols-8' : ''}`}>
         {(countryData.cityCount < 50) ? countryData.countryCities.map((city) => (
           <City
             key={city.cityId}
