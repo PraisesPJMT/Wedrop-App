@@ -41,6 +41,8 @@ const Header = () => {
         const { ContinentName, CountryName } = api.getContinentCountryName(weather.countryCode);
         navigate(`/${ContinentName.toLowerCase().replace(/ /g, '-').replace(/'/g, '')}/${CountryName.toLowerCase().replace(/ /g, '-')}/${weather.cityName.toLowerCase().replace(/ /g, '-')}`);
         search.value = '';
+      } else if (status === 'failed') {
+        navigate('/invalid');
       }
     }
   };
