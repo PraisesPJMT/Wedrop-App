@@ -9,8 +9,8 @@ const Home = () => {
   return (
     <>
       <section className="text-white relative">
-        <img className="w-full opacity-20" src="https://raw.githubusercontent.com/PraisesPJMT/Data/main/maps/world-map.png" alt="World Map" />
-        <div className="absolute top-[20%] right-6 text-right w-3/4">
+        <img className="w-full md:w-auto opacity-20" src="https://raw.githubusercontent.com/PraisesPJMT/Data/main/maps/world-map.png" alt="World Map" />
+        <div className="absolute top-[20%] right-6 md:right-[20%] text-right w-3/4">
           <h1 className="font-black text-2xl">Wadrop</h1>
           <h2 className="font-bold text-xm">
             Check Weather in Cities All Over the World
@@ -24,10 +24,10 @@ const Home = () => {
       <div className="text-white bg-strip-blue p-1">
         <p className="text-xs font-bold">COUNTRIES BY CONTINENTS</p>
       </div>
-      <section className="text-white grid grid-cols-2 overflow-y-auto ">
+      <section className="text-white grid grid-cols-2 overflow-y-auto md:grid-cols-6 md:overflow-hidden">
         { cities.map((data) => (
           <Link
-            className={`h-[180px] relative ${(data.id === 2 || data.id === 3 || data.id === 6) ? 'bg-dark-blue' : ''}`}
+            className={`h-[180px] relative md:bg-cornflower-blue md:border md:border-dark-blue ${(data.id === 2 || data.id === 3 || data.id === 6) ? 'bg-dark-blue' : ''}`}
             key={data.continent}
             to={`/${data.continent.toLowerCase().replace(/ /g, '-')}`}
           >
