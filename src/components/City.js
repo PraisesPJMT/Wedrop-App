@@ -17,15 +17,15 @@ const City = ({ weather }) => {
       <section className="text-white relative p-3 text-center md:max-w-xl md:mx-auto">
         <h2 className="text-4xl font-bold">{ weather.cityName }</h2>
         <p className="text-xs">
-          <span>{ContinentName}</span>
+          <span className="continent">{ContinentName}</span>
           {' | '}
-          <span>{CountryName}</span>
+          <span className="country">{CountryName}</span>
         </p>
         <p className="text-xs font-bold">{ localTIme }</p>
         <div className="flex justify-between items-center">
           <div className="flex flex-col items-center">
             <img src={api.getWeatherIcon(weatherIconCode)} alt="Weather Icon" />
-            <p className="font-bold text-2xl">
+            <p className="temperature font-bold text-2xl">
               {convertToKelvin(weather.weatherData.temp)}
               °C
             </p>
