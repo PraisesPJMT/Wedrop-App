@@ -1,17 +1,22 @@
 import React, { useState } from 'react';
-import { Link, NavLink, useNavigate } from 'react-router-dom';
+import {
+  Link, NavLink, useLocation, useNavigate,
+} from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
-  faCloudSunRain, faMagnifyingGlassLocation, faBars, faClose,
+  faCloudSunRain, faMagnifyingGlassLocation, faBars, faClose, faChevronLeft,
 } from '@fortawesome/free-solid-svg-icons';
-import { allStatus, allWeather, getWeather } from '../redux/weather/weather';
+import {
+  allStatus, allWeather, getWeather,
+} from '../redux/weather/weather';
 import api from '../redux/api/api';
 
 const Header = () => {
   const [menuOpen, setMenu] = useState(false);
   const status = useSelector(allStatus);
   const weather = useSelector(allWeather);
+  const location = useLocation();
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const navs = [
@@ -40,18 +45,26 @@ const Header = () => {
     }
   };
 
+  const handleNavigation = () => {
+    closeMobileMenu();
+    const currentPath = location.pathname.split('/');
+    currentPath.pop();
+    const newPath = currentPath.join('/');
+    navigate(newPath || '/');
+  };
+
   return (
     <header className="py-2 px-4 bg-steel-blue flex item-center justify-between z-[100]">
       <div className="w-[20px] flex items-center md:hidden z-[100]">
         <button
           className="flex item-center"
           type="button"
-          onClick={handleMobileMenu}
+          onClick={handleNavigation}
         >
           <FontAwesomeIcon
             id="mobileMenu"
             className="text-xl text-white"
-            icon={menuOpen ? faClose : faBars}
+            icon={faChevronLeft}
           />
         </button>
       </div>
@@ -95,6 +108,19 @@ const Header = () => {
           <FontAwesomeIcon
             className="text-xs hover:scale-125 px-1.5 py-1.5 md:text-xl md:p-auto"
             icon={faMagnifyingGlassLocation}
+          />
+        </button>
+      </div>
+      <div className="w-[20px] flex items-center md:hidden z-[100]">
+        <button
+          className="flex item-center"
+          type="button"
+          onClick={handleMobileMenu}
+        >
+          <FontAwesomeIcon
+            id="mobileMenu"
+            className="text-xl text-white"
+            icon={menuOpen ? faClose : faBars}
           />
         </button>
       </div>

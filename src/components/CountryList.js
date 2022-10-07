@@ -22,7 +22,7 @@ const CountryList = ({ countries }) => {
         open={open === 1}
         icon={<Icon id={1} open={open} />}
       >
-        <AccordionHeader className="px-4 font-bold text-[1rem]" onClick={() => handleOpen(1)}>
+        <AccordionHeader className="px-4 py-3 border-b border-b-white font-bold text-[1rem]" onClick={() => handleOpen(1)}>
           Countries from A - E
         </AccordionHeader>
         <AccordionBody
@@ -46,7 +46,7 @@ const CountryList = ({ countries }) => {
         open={open === 2}
         icon={<Icon id={2} open={open} />}
       >
-        <AccordionHeader className="px-4 font-bold text-[1rem]" onClick={() => handleOpen(2)}>
+        <AccordionHeader className="px-4 py-3 border-b border-b-white font-bold text-[1rem]" onClick={() => handleOpen(2)}>
           Countries from F - J
         </AccordionHeader>
         <AccordionBody
@@ -70,7 +70,7 @@ const CountryList = ({ countries }) => {
         open={open === 3}
         icon={<Icon id={3} open={open} />}
       >
-        <AccordionHeader className="px-4 font-bold text-[1rem]" onClick={() => handleOpen(3)}>
+        <AccordionHeader className="px-4 py-3 border-b border-b-white font-bold text-[1rem]" onClick={() => handleOpen(3)}>
           Countries from K - O
         </AccordionHeader>
         <AccordionBody
@@ -94,7 +94,7 @@ const CountryList = ({ countries }) => {
         open={open === 4}
         icon={<Icon id={4} open={open} />}
       >
-        <AccordionHeader className="px-4 font-bold text-[1rem]" onClick={() => handleOpen(4)}>
+        <AccordionHeader className="px-4 py-3 border-b border-b-white font-bold text-[1rem]" onClick={() => handleOpen(4)}>
           Countries from P - T
         </AccordionHeader>
         <AccordionBody
@@ -118,7 +118,7 @@ const CountryList = ({ countries }) => {
         open={open === 5}
         icon={<Icon id={5} open={open} />}
       >
-        <AccordionHeader className="px-4 font-bold text-[1rem]" onClick={() => handleOpen(5)}>
+        <AccordionHeader className="px-4 py-3 border-b border-b-white font-bold text-[1rem]" onClick={() => handleOpen(5)}>
           Countries from U - Z
         </AccordionHeader>
         <AccordionBody
