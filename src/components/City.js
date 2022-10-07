@@ -14,7 +14,7 @@ const City = ({ weather }) => {
   const { ContinentName, CountryName } = api.getContinentCountryName(weather.countryCode);
   return (
     <>
-      <section className="text-white relative p-3 text-center">
+      <section className="text-white relative p-3 text-center md:max-w-xl md:mx-auto">
         <h2 className="text-4xl font-bold">{ weather.cityName }</h2>
         <p className="text-xs">
           <span className="continent">{ContinentName}</span>
@@ -59,9 +59,9 @@ const City = ({ weather }) => {
         </div>
       </section>
       <div className="text-white bg-strip-blue p-1">
-        <p className="text-xs font-bold">MORE WEATHER INFORMATION</p>
+        <p className="text-xs font-bold md:text-center">MORE WEATHER INFORMATION</p>
       </div>
-      <section className="text-white grid grid-cols-2 overflow-y-auto">
+      <section className="text-white grid grid-cols-2 overflow-y-auto md:max-w-xl md:mx-auto">
         <div className="py-5 px-3 flex flex-col justify-center">
           <h3 className="text-center font-bold">Sun</h3>
           <p className="text-left text-[0.8rem] font-bold pt-2 pb-0.5">

@@ -1,10 +1,5 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import {
-  Accordion,
-  AccordionHeader,
-  AccordionBody,
-} from '@material-tailwind/react';
 import Icon from './Icon';
 import Country from './CountryListItem';
 
@@ -17,16 +12,15 @@ const CountryList = ({ countries }) => {
 
   return (
     <>
-      <Accordion
+      <details
         className="border-grey-lighter bg-dark-blue cursor-pointer"
-        open={open === 1}
-        icon={<Icon id={1} open={open} />}
       >
-        <AccordionHeader className="px-4 py-3 border-b border-b-white font-bold text-[1rem]" onClick={() => handleOpen(1)}>
+        <summary className="px-4 py-3 border-b border-b-white flex justify-between font-bold text-[1rem]">
           Countries from A - E
-        </AccordionHeader>
-        <AccordionBody
-          className="bg-cornflower-blue grid grid-cols-2 overflow-y-auto pt-0"
+          <Icon />
+        </summary>
+        <div
+          className="bg-cornflower-blue grid grid-cols-2 md:grid-cols-6 overflow-y-auto pt-0"
         >
           { countries.filter((country) => {
             const names = ['A', 'B', 'C', 'D', 'E'];
@@ -39,18 +33,17 @@ const CountryList = ({ countries }) => {
               continent={country.continent}
             />
           ))}
-        </AccordionBody>
-      </Accordion>
-      <Accordion
+        </div>
+      </details>
+      <details
         className="border-grey-lighter bg-dark-blue cursor-pointer"
-        open={open === 2}
-        icon={<Icon id={2} open={open} />}
       >
-        <AccordionHeader className="px-4 py-3 border-b border-b-white font-bold text-[1rem]" onClick={() => handleOpen(2)}>
+        <summary className="flex justify-between px-4 py-3 border-b border-b-white font-bold text-[1rem]">
           Countries from F - J
-        </AccordionHeader>
-        <AccordionBody
-          className="bg-cornflower-blue grid grid-cols-2 overflow-y-auto pt-0"
+          <Icon />
+        </summary>
+        <div
+          className="bg-cornflower-blue grid grid-cols-2 md:grid-cols-6 overflow-y-auto pt-0"
         >
           { countries.filter((country) => {
             const names = ['F', 'G', 'H', 'I', 'J'];
@@ -63,18 +56,17 @@ const CountryList = ({ countries }) => {
               continent={country.continent}
             />
           ))}
-        </AccordionBody>
-      </Accordion>
-      <Accordion
+        </div>
+      </details>
+      <details
         className="border-grey-lighter bg-dark-blue cursor-pointer"
-        open={open === 3}
-        icon={<Icon id={3} open={open} />}
       >
-        <AccordionHeader className="px-4 py-3 border-b border-b-white font-bold text-[1rem]" onClick={() => handleOpen(3)}>
+        <summary className="flex justify-between px-4 py-3 border-b border-b-white font-bold text-[1rem]">
           Countries from K - O
-        </AccordionHeader>
-        <AccordionBody
-          className="bg-cornflower-blue grid grid-cols-2 overflow-y-auto pt-0"
+          <Icon />
+        </summary>
+        <div
+          className="bg-cornflower-blue grid grid-cols-2 md:grid-cols-6 overflow-y-auto pt-0"
         >
           { countries.filter((country) => {
             const names = ['K', 'L', 'M', 'N', 'O'];
@@ -87,18 +79,17 @@ const CountryList = ({ countries }) => {
               continent={country.continent}
             />
           ))}
-        </AccordionBody>
-      </Accordion>
-      <Accordion
+        </div>
+      </details>
+      <details
         className="border-grey-lighter bg-dark-blue cursor-pointer"
-        open={open === 4}
-        icon={<Icon id={4} open={open} />}
       >
-        <AccordionHeader className="px-4 py-3 border-b border-b-white font-bold text-[1rem]" onClick={() => handleOpen(4)}>
+        <summary className="flex justify-between px-4 py-3 border-b border-b-white font-bold text-[1rem]">
           Countries from P - T
-        </AccordionHeader>
-        <AccordionBody
-          className="bg-cornflower-blue grid grid-cols-2 overflow-y-auto pt-0"
+          <Icon />
+        </summary>
+        <div
+          className="bg-cornflower-blue grid grid-cols-2 md:grid-cols-6 overflow-y-auto pt-0"
         >
           { countries.filter((country) => {
             const names = ['P', 'Q', 'R', 'S', 'T'];
@@ -111,18 +102,17 @@ const CountryList = ({ countries }) => {
               continent={country.continent}
             />
           ))}
-        </AccordionBody>
-      </Accordion>
-      <Accordion
+        </div>
+      </details>
+      <details
         className="border-grey-lighter bg-dark-blue cursor-pointer"
-        open={open === 5}
-        icon={<Icon id={5} open={open} />}
       >
-        <AccordionHeader className="px-4 py-3 border-b border-b-white font-bold text-[1rem]" onClick={() => handleOpen(5)}>
+        <summary className="flex justify-between px-4 py-3 border-b border-b-white font-bold text-[1rem]" onClick={() => handleOpen(5)}>
           Countries from U - Z
-        </AccordionHeader>
-        <AccordionBody
-          className="bg-cornflower-blue grid grid-cols-2 overflow-y-auto pt-0"
+          <Icon />
+        </summary>
+        <div
+          className="bg-cornflower-blue grid grid-cols-2 md:grid-cols-6 overflow-y-auto pt-0"
         >
           { countries.filter((country) => {
             const names = ['U', 'V', 'W', 'X', 'Y', 'Z'];
@@ -135,8 +125,8 @@ const CountryList = ({ countries }) => {
               continent={country.continent}
             />
           ))}
-        </AccordionBody>
-      </Accordion>
+        </div>
+      </details>
     </>
   );
 };

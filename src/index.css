@@ -18,6 +18,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #5487e2ff;
 }
 
 code {
@@ -28,4 +29,9 @@ code {
     Consolas,
     'Courier New',
     monospace;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
 }

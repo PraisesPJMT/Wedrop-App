@@ -37,7 +37,7 @@ const ContactPage = () => (
       </ul>
       <div className="social-card flex flex-wrap justify-center py-4 gap-2 ">
         <a
-          className="px-2 py-1 flex gap-1 items-center text-[1rem] font-bold bg-black"
+          className="px-2 py-1 flex gap-1 items-center text-[1rem] font-bold bg-black hover:scale-110"
           href="https://github.com/PraisesPJMT"
           target="_blank"
           rel="noreferrer"
@@ -49,7 +49,7 @@ const ContactPage = () => (
           <span>GitHub</span>
         </a>
         <a
-          className="px-2 py-1 flex gap-1 items-center text-[1rem] font-bold bg-[#de5246]"
+          className="px-2 py-1 flex gap-1 items-center text-[1rem] font-bold bg-[#de5246] hover:scale-110"
           href="mailto:praisesmusa@gmail.com"
           target="_blank"
           rel="noreferrer"
@@ -61,7 +61,7 @@ const ContactPage = () => (
           <span>Email</span>
         </a>
         <a
-          className="px-2 py-1 flex gap-1 items-center text-[1rem] font-bold bg-[#0e76a8]"
+          className="px-2 py-1 flex gap-1 items-center text-[1rem] font-bold bg-[#0e76a8] hover:scale-110"
           href="https://www.linkedin.com/in/praises-tula-9233aa76"
           target="_blank"
           rel="noreferrer"
@@ -73,7 +73,7 @@ const ContactPage = () => (
           <span>LinkedIn</span>
         </a>
         <a
-          className="px-2 py-1 flex gap-1 items-center text-[1rem] font-bold bg-[#1da1f2]"
+          className="px-2 py-1 flex gap-1 items-center text-[1rem] font-bold bg-[#1da1f2] hover:scale-110"
           href="https://twitter.com/PraisesPJMT"
           target="_blank"
           rel="noreferrer"
@@ -85,7 +85,7 @@ const ContactPage = () => (
           <span>Twitter</span>
         </a>
         <a
-          className="px-2 py-1 flex gap-1 items-center text-[1rem] font-bold bg-[#3b5998]"
+          className="px-2 py-1 flex gap-1 items-center text-[1rem] font-bold bg-[#3b5998] hover:scale-110"
           href="https://web.facebook.com/praises.musa"
           target="_blank"
           rel="noreferrer"
@@ -97,7 +97,7 @@ const ContactPage = () => (
           <span>Facebook</span>
         </a>
         <a
-          className="px-2 py-1 flex gap-1 items-center text-[1rem] font-bold bg-[#833ab4]"
+          className="px-2 py-1 flex gap-1 items-center text-[1rem] font-bold bg-[#833ab4] hover:scale-110"
           href="https://www.instagram.com/praisespjmt/"
           target="_blank"
           rel="noreferrer"

@@ -1,21 +1,12 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCircleDown } from '@fortawesome/free-solid-svg-icons';
+import { faList } from '@fortawesome/free-solid-svg-icons';
 
-const Icon = ({ id, open }) => (
+const Icon = () => (
   <FontAwesomeIcon
-    id="mobileMenu"
-    className={`text-xl text-white ${
-      id === open ? 'rotate-180' : ''
-    } transition-transform`}
-    icon={faCircleDown}
+    className="text-xl text-white mobileMenu"
+    icon={faList}
   />
 );
-
-Icon.propTypes = {
-  id: PropTypes.number.isRequired,
-  open: PropTypes.number.isRequired,
-};
 
 export default Icon;
